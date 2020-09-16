@@ -1,3 +1,4 @@
 # Parallax Effect 
-## using vanilla javaScript
+**using vanilla javaScript**
+
 
