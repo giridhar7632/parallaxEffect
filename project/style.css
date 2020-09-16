@@ -1,40 +1,81 @@
 :root{
-  --bgcolor: #163f15;
+  --bgcolor: #154214;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  overflow-x: hidden;
 }
-section{
-  min-height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .main{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  background: url("./assets/cate-bligh-lX5wMeZUidA-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  backface-visibility: inherit;
+  font-size: 24px;
 }
-.fitBg{
+.main:before{
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8;
+  height: 30px;
+  z-index: 101;
+  background: linear-gradient(to top,var(--bgcolor),transparent);
 }
-.elements{
-  position: relative;
-  max-width: 90%;
+.faster, .no-effect, .slower{
+  width: 15vw;
+  height: 15vw;
+  color: aliceblue;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255,0.3);
+  z-index: 2;
+}
+.faster{
+  background-color: rgb(211, 81, 58);
+  border: 1px solid rgb(211, 81, 58);
+}
+.no-effect{
+  background-color: rgb(40, 148, 76);
+  border: 1px solid rgb(40, 148, 76);
+}
+.slower{
+  background-color: rgb(38, 50, 160);
+  border: 1px solid rgb(38, 50, 160);
+}
+
+.footer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bgcolor);
+  z-index: 100;
+  color: #ffffff;
+}
+.footer h1{
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+.footer p{
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 768px){
+  .main{
+    font-size: 20px;
+  }
+  .faster, .no-effect, .slower{
+    width: 28vw;
+    height: 28vw;
+  }
 }
