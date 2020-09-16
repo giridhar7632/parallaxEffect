@@ -4,5 +4,41 @@
   box-sizing: border-box;
 }
 img{
-  width: 100%;
+  width: 100vw;
+  height: auto;
+}
+.layer1{
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  transform: translate(0,0);
+  z-index: 6;
+}
+.layer2{
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  transform: translate(0,-80%);
+  z-index: 5;
+}
+.layer3{
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  transform: translate(0,-60%);
+  z-index: 4;
+}
+.layer2{
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  transform: translate(0,-40%);
+  z-index: 3;
+}
+.layer5{
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  transform: translate(0,-20%);
+  z-index: 2;
 }
