@@ -4,7 +4,7 @@ const parallax = (element, distance, speed) => {
   item.style.transform = `translateY(${distance*speed}px)`;
 }
 
-window.addEventListener('scroll', () => {
+document.addEventListener('scroll', () => {
   parallax('.faster', -window.scrollY, 0.5);
   parallax('.slower', window.scrollY, 0.5);
 });
