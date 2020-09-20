@@ -28,7 +28,7 @@ It contains five elements with classes `layer-1 faster`, `layer-2 slower`, `laye
 
 Let's add parallax effect.
 This is very simple. The thing we have to do here is just select the layer and change it's speed while scrolling. That's it!<br>
-Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) and add a the following function.<br>
+Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) and add a the following `function`.<br>
 
 ```javascript
 const parallax = (layer, distance, speed) => {
@@ -66,9 +66,9 @@ That's it! You can add any number of layers for the document and call the `paral
 This is the main basic about Parallax effect. You can modify the function `parallax` and get the result you want.<br> 
 Now Let's try different parallax.
 ### Horizontal Parallax
-Now let's change the javascript for horizontal parallax or you can again fork this repl! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html) <br>
+Now add another two `div` tags with classes `layer-4 right` and `layer-5 left` to `index.html`<br>
 In horizontal parallax, the elements in the page move horizontally as you scroll. 
-Replace the `translateY` with `translateX` which causes jorizontal motion.<br> 
+Add the following `function` , which causes horizontal motion.<br> 
 
 ```javascript
 const hrparallax = (layer, distance, speed) => {
@@ -81,6 +81,8 @@ The positive value translates rightwards and negative value translates leftwards
 
 ### Inspiration
 * **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
+* **Horizontal parallax** :
+* **Parallax on Mouse Move** : 
 
 ### speed-1 
 In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling. <br>
