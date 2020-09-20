@@ -9,10 +9,12 @@ You have to just have some beginner-intermediate knowledge about HTML, CSS and s
 ## Getting Started
 
 ### Parallax
+
 Parallax movement is when things move at different speeds relative to each other. This effect can be used to create an illusion of depth. This effect actually seen while scrolling a webpage. So it is called Parallax scrolling.
 The technique is popular in many places including video games, where it’s usually seen in the layered backgrounds.
->**Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
-We can see how the parallax effect works in this example.
-<br>
-You can see how parallax effect works while scrolling [here](https://parallax-effect.giridharhackclu.repl.co/)
-<object type="text/html" data="https://parallax-effect.giridharhackclu.repl.co"></object>
+
+> **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
+ We can see how the parallax effect works in this example.
+ <br>
+ You can see how parallax effect works while scrolling [here](https://parallax-effect.giridharhackclu.repl.co/)
+ <object type="text/html" data="https://parallax-effect.giridharhackclu.repl.co"></object>
