@@ -24,7 +24,7 @@ Practically a parallax is composed of more than one layer in parallel, moving al
 Let's start working.<br>
 Fork this repl and explore ! [repl](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
 <br>
-It contains three elements with classes `layer-1 faster`, `layer-2 slower` and `layer-3 no-effect` resplectively added with some basic styles. I created the elements in circular shape. Go ahead and use your creativity and customise the styles.<br>
+It contains five elements with classes `layer-1 faster`, `layer-2 slower`, `layer-3 no-effect`, `layer-4 right` and `layer-5 left` added with some basic styles. I created the elements in circular shape. Go ahead and use your creativity and customise the styles.<br>
 
 Let's add parallax effect.
 This is very simple. The thing we have to do here is just select the layer and change it's speed while scrolling. That's it!<br>
@@ -39,7 +39,7 @@ const parallax = (layer, distance, speed) => {
 ```
 This function has three arguments `layer` - the layer you want to add parallax, `distance` - how much we scroll and `speed` - the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
 
-And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for changing the speed of the layer. The positive value translates downwards and negative value translates upwards. Study more about `translate( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).<br>
+And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for changing the speed of the layer. The positive value translates downwards and negative value translates upwards. Discover more about `translateY( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).<br>
 
 ### Event Listener
 Now we are going to call this function while scrolling. So add an event listener `scroll` and the function given as argument gets executed.<br>
@@ -61,23 +61,23 @@ parallax('.layer-3', window.scrollY, 0.3)
 For faster speeds the `speed` will be positive and for slower speeds it should be negative.
 In the above code, we are adding faster speed(0.5) to `layer-1` and slower to `layer-2`. So finally look at the output and scroll. You can see that `layer-1` will move faster(0.5 times the normal speed), `layer-3` will move slower i.e., downwards and the one with `no-effect` or `layer-2` will move with normal speed.<br>
 Your final page will look something [like this](https://parallax-effect.giridharhackclu.repl.co/).<br>
-Try changing the speed to `1` and observe what happens to each layer and think why it happens. You can check the answer [here](#speed-1)
+Try changing the speed to `1` and observe what happens to each layer and think why it happens. You can check the answer [here](#speed-1).<br>
 That's it! You can add any number of layers for the document and call the `parallax` function. This is the *parallax effect*.
 This is the main basic about Parallax effect. You can modify the function `parallax` and get the result you want.<br> 
 Now Let's try different parallax.
 ### Horizontal Parallax
-Now again fork this repl! [repl](https://repl.it/@Giridharhackclu/parallax-starter#index.html) or you can just change the javascript in current one. <br>
+Now let's change the javascript for horizontal parallax or you can again fork this repl! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html) <br>
 In horizontal parallax, the elements in the page move horizontally as you scroll. 
 Replace the `translateY` with `translateX` which causes jorizontal motion.<br> 
 
 ```javascript
-const parallax = (layer, distance, speed) => {
+const hrparallax = (layer, distance, speed) => {
   const item = document.querySelector(layer)
 
   item.style.transform = `translateX(${distance*speed}px)`
 }
 ```
-The positive value translates rightwards and negative value translates leftwards. Study more about `translate( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateX).
+The positive value translates rightwards and negative value translates leftwards. Discover more about `translateX( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateX).
 
 ### Inspiration
 * **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
