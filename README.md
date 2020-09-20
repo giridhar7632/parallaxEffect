@@ -41,6 +41,7 @@ This function has three arguments `layer` -the layer you want to add parallax, `
 <br>
 And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for delaying the speed of the layer. The positive value transforms downwards and negative value transforms upwards. Study more about transform [here](https://www.w3schools.com/cssref/css3_pr_transform.asp).
 <br>
+### Event Listener
 Now we are going to call this function while scrolling. So add an event listener `scroll` and the function given as argument gets executed.
 <br>
 ```javascript
