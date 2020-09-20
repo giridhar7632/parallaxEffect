@@ -1,3 +1,3 @@
 # Example on parallax effect
 
-live at (https://parallaxeffect.giridharhackclu.repl.co/)
+live at (https://total-parallax.giridharhackclu.repl.co/)
