@@ -90,6 +90,7 @@ Also add following styles or you can customize and add your own.
 ```
 In horizontal parallax, the elements in the page move horizontally as you scroll. 
 Add the following `function` , which causes horizontal motion.<br> 
+With the following `function hrparallax` the layer gets translated along x-direction.
 
 ```javascript
 const hrparallax = (layer, distance, speed) => {
