@@ -50,3 +50,4 @@ document.addEventListener('scroll', () => {
 })
 ```
 <br>
+> **scrollY:** The read-only scrollY property of the Window interface returns the number of pixels that the document is currently scrolled vertically. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number. You can get the number of pixels the document is scrolled horizontally from the scrollX property.
