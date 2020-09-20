@@ -22,7 +22,7 @@ You can see different elements are moving different speeds while scrolling.
 ### Creating the Parallax Effect
 Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.
 Let's start working.<br>
-Fork this repl and explore ! [repl](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
+Fork this repl and explore ! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
 <br>
 It contains five elements with classes `layer-1 faster`, `layer-2 slower`, `layer-3 no-effect`, `layer-4 right` and `layer-5 left` added with some basic styles. I created the elements in circular shape. Go ahead and use your creativity and customise the styles.<br>
 
@@ -34,7 +34,7 @@ Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) a
 const parallax = (layer, distance, speed) => {
   const item = document.querySelector(layer)
 
-  item.style.transform = `translateY(${distance*speed}px)`
+  item.style.transform = `translateY(${-distance*speed}px)`
 }
 ```
 This function has three arguments `layer` - the layer you want to add parallax, `distance` - how much we scroll and `speed` - the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
@@ -54,12 +54,11 @@ document.addEventListener('scroll', () => {
 The `parallax` function is called inside. Here, for this project we are going to select the layers with classes `layer-1` and `layer-3` from the document. Then the `distance` argument in `parallax` function is how much we scroll i.e., `window.scrollY` and the speed value can be customised. The `speed` argument decides whether the layer moves faster or slower.
 Add the following code<br>
 ```javascript
-parallax('.layer-1', -window.scrollY, 0.5)
-parallax('.layer-3', window.scrollY, 0.3)
+parallax('.layer-1', window.scrollY, 0.5)
+parallax('.layer-3', window.scrollY, -0.5)
 ```
-
 For faster speeds the `speed` will be positive and for slower speeds it should be negative.
-In the above code, we are adding faster speed(0.5) to `layer-1` and slower to `layer-2`. So finally look at the output and scroll. You can see that `layer-1` will move faster(0.5 times the normal speed), `layer-3` will move slower i.e., downwards and the one with `no-effect` or `layer-2` will move with normal speed.<br>
+In the above code, we are adding faster speed to `layer-1` and slower to `layer-3`.<br> So finally look at the output and scroll. You can see that `layer-1` will move faster(0.5 times the normal speed), `layer-3` will move slower i.e., downwards and the one with `no-effect` or `layer-2` will move with normal speed.<br>
 Your final page will look something [like this](https://parallax-effect.giridharhackclu.repl.co/).<br>
 Try changing the speed to `1` and observe what happens to each layer and think why it happens. You can check the answer [here](#speed-1).<br>
 That's it! You can add any number of layers for the document and call the `parallax` function. This is the *parallax effect*.
@@ -67,6 +66,28 @@ This is the main basic about Parallax effect. You can modify the function `paral
 Now Let's try different parallax.
 ### Horizontal Parallax
 Now add another two `div` tags with classes `layer-4 right` and `layer-5 left` to `index.html`<br>
+```
+<div class="layer-4 right">Right</div>
+<div class="layer-5 left">Left</div>
+```
+Also add following styles or you can customize and add your own.
+```css
+.right, .left{
+  width: 15vw;
+  height: 15vw;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.right{
+  background-color: rgb(98, 53, 156);
+}
+.left{
+  background-color: rgb(141, 133, 16);
+}
+```
 In horizontal parallax, the elements in the page move horizontally as you scroll. 
 Add the following `function` , which causes horizontal motion.<br> 
 
@@ -74,10 +95,17 @@ Add the following `function` , which causes horizontal motion.<br>
 const hrparallax = (layer, distance, speed) => {
   const item = document.querySelector(layer)
 
-  item.style.transform = `translateX(${distance*speed}px)`
+  item.style.transform = `translateX(${-distance*speed}px)`
 }
 ```
-The positive value translates rightwards and negative value translates leftwards. Discover more about `translateX( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateX).
+The positive value translates rightwards and negative value translates leftwards. Discover more about `translateX( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateX).<br>
+Add the following code<br>
+```javascript
+hrparallax('.layer-4', window.scrollY, -0.5)
+hrparallax('.layer-5', window.scrollY, 0.5)
+```
+For rightward movement the `speed` will be negative and for leftward movement it should be positive.<br>
+Your final page will look something [like this](https://total-parallax.giridharhackclu.repl.co/).<br>
 
 ### Inspiration
 * **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
