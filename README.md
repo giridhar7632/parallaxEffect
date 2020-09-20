@@ -66,7 +66,7 @@ This is the main basic about Parallax effect. You can modify the function `paral
 Now Let's try different parallax.
 ### Horizontal Parallax
 Now add another two `div` tags with classes `layer-4 right` and `layer-5 left` to `index.html`<br>
-```
+```html
 <div class="layer-4 right">Right</div>
 <div class="layer-5 left">Left</div>
 ```
