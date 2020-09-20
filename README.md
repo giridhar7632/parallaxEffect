@@ -37,9 +37,9 @@ const parallax = (layer, distance, speed) => {
   item.style.transform = `translateY(${-distance*speed}px)`
 }
 ```
-This function has three arguments `layer` -the layer you want to add parallax, `distance` -how much we scroll and `speed` -the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.
-<br>
-And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for delaying the speed of the layer. The positive value transforms downwards and negative value transforms upwards. Study more about transform [here](https://www.w3schools.com/cssref/css3_pr_transform.asp).
+This function has three arguments `layer` -the layer you want to add parallax, `distance` -how much we scroll and `speed` -the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
+
+And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for changing the speed of the layer. The positive value translates downwards and negative value translates upwards. Study more about `translate( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translate).
 <br>
 ### Event Listener
 Now we are going to call this function while scrolling. So add an event listener `scroll` and the function given as argument gets executed.

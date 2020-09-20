@@ -6,7 +6,5 @@ const parallax = (element, distance, speed) => {
  
 document.addEventListener('scroll', () => {
   parallax('.layer-1', window.scrollY, 0.5);
-  parallax('.layer-2', window.scrollY, -0.4);
-  parallax('.layer-4', -window.scrollY, 0.7);
-  parallax('.layer-5', -window.scrollY, 0.6);
+  parallax('.layer-2', window.scrollY, -0.5);
 });
