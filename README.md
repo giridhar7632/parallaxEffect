@@ -49,7 +49,7 @@ document.addEventListener('scroll', () => {
   
 })
 ```
-> **scrollY:** The read-only scrollY property of the Window interface returns the number of pixels that the document is currently **scrolled vertically**. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number. You can get the number of pixels the document is **scrolled horizontally** from the **scrollX** property. - [MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY).
+> **scrollY:** The read-only scrollY property of the Window interface returns the number of pixels that the document is currently **scrolled vertically**. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number. You can get the number of pixels the document is **scrolled horizontally** from the **scrollX** property. - [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollY).
 
 The `parallax` function is called inside. Here, for this project we are going to select the layers with classes `layer-1` and `layer-3` from the document. Then the `distance` argument in `parallax` function is how much we scroll i.e., `window.scrollY` and the speed value can be customised. The `speed` argument decides whether the layer moves faster or slower.
 Add the following code<br>
@@ -64,3 +64,6 @@ Your final page will look something [like this](https://parallax-effect.giridhar
 
 That's it! You can add any number of layers for the document and call the function. This is the *parallax effect*.
 This is the main basic about Parallax effect. You can modify the function `parallax` and get the result you want.<br> You can use different `events` of javascript like `scroll`, `mousemove` etc.. and different methods like `scrollY` or `scrollX`, `pageY` or `pageX` etc. for creating different types of parallax effects.
+
+### Inspiration
+* **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
