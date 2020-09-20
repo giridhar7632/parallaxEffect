@@ -32,11 +32,21 @@ Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) a
 <br>
 ```javascript
 const parallax = (layer, distance, speed) => {
-  const item = document.querySelector(layer);
+  const item = document.querySelector(layer)
 
-  item.style.transform = `translateY(${distance*speed}px)`;
+  item.style.transform = `translateY(${distance*speed}px)`
 }
 ```
 <br>
-This function has three arguments `layer` -the layer you want to add parallax, `distance` -how much we scroll and `speed` -the required speed. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
-And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the ` Y ` of the element using CSS `transform: translateY();` for delaying the speed of the layer.
+This function has three arguments `layer` -the layer you want to add parallax, `distance` -how much we scroll and `speed` -the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
+And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for delaying the speed of the layer. 
+<br>
+Now we are going to call this function while scrolling. So add an event listener `scroll` and the function given as argument gets executed  
+<br>
+```javascript
+document.addEventListener('scroll', () => {
+  parallax('.layer-1', -window.scrollY, 0.5)
+  parallax('.layer-3', window.scrollY, 0.3)
+})
+```
+<br>
