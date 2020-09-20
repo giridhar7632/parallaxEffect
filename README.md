@@ -38,5 +38,5 @@ const parallax = (layer, distance, speed) => {
 }
 ```
 <br>
-This function has three arguments `layer` -the layer you want to add parallax, `distance` -how much we scroll and `speed` -the required speed. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.
-And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY();` for delaying the speed of the layer.
+This function has three arguments `layer` -the layer you want to add parallax, `distance` -how much we scroll and `speed` -the required speed. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
+And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the ` Y ` of the element using CSS `transform: translateY();` for delaying the speed of the layer.
