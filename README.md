@@ -34,19 +34,29 @@ Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) a
 const parallax = (layer, distance, speed) => {
   const item = document.querySelector(layer)
 
-  item.style.transform = `translateY(${distance*speed}px)`
+  item.style.transform = `translateY(${-distance*speed}px)`
 }
 ```
 This function has three arguments `layer` -the layer you want to add parallax, `distance` -how much we scroll and `speed` -the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.
 <br>
-And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for delaying the speed of the layer. 
+And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for delaying the speed of the layer. The positive value transforms downwards and negative value transforms upwards. Study more about transform [here](https://www.w3schools.com/cssref/css3_pr_transform.asp).
 <br>
 Now we are going to call this function while scrolling. So add an event listener `scroll` and the function given as argument gets executed.
 <br>
 ```javascript
 document.addEventListener('scroll', () => {
-  parallax('.layer-1', -window.scrollY, 0.5)
-  parallax('.layer-3', window.scrollY, 0.3)
+  
 })
 ```
 > **scrollY:** The read-only scrollY property of the Window interface returns the number of pixels that the document is currently **scrolled vertically**. This value is subpixel precise in modern browsers, meaning that it isn't necessarily a whole number. You can get the number of pixels the document is **scrolled horizontally** from the **scrollX** property.
+
+The `parallax` function is called inside. Here, for this project we are going to select the layers with classes `layer-1` and `layer-3` from the document. Then the `distance` argument in `parallax` function is how much we scroll i.e., `window.scrollY` and the speed value can be customised. The `speed` argument decides whether the layer moves faster or slower.
+Add the following code<br>
+```javascript
+parallax('.layer-1', window.scrollY, 0.5)
+parallax('.layer-3', window.scrollY, -0.3)
+```
+
+For faster speeds the `speed` will be positive and for slower speeds it should be negative.
+In the above code, we are adding faster speed(0.5) to `layer-1` and slower to `layer-2`. So finally look at the output and scroll. You can see that `layer-1` will move faster(0.5 times the normal speed), `layer-3` will move slower and the one with `no-effect` or `layer-2` will move with normal speed.<br>
+That's it! You can add any number of layers for the document and call the function. This is the *parallax effect*.
