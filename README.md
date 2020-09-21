@@ -3,32 +3,33 @@
 **using vanilla javaScript**
 <br/>
 <br/>
-One of the most popular effects of the modern web is the parallax effect. There are many java libraries available out there for creating the parallax effect. But we are going to use vanilla javascript to get it into action. Trust me! it's that simple. Then get started and follow along!
-You have to just have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
+One of the most popular effects of the modern web is the parallax effect. There are many javaScript libraries like Rellax etc. available out there for creating the parallax effect. But we are going to use vanilla javascript to get it into action. Trust me! it's that simple. Get started and follow along!
+You should have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
 
 # Getting Started
 
 ## Parallax
 
-Parallax movement is when things move at different speeds relative to each other. This effect can be used to create an illusion of depth. This effect actually seen while scrolling a webpage. So it is called Parallax scrolling.
+Parallax movement is when things move at different speeds relative to each other. This effect can be used to create an illusion of depth. 
+We will actually see this effect while scrolling a webpage. It's called Parallax scrolling.<br>
 The technique is popular in many places including video games, where it’s usually seen in the layered backgrounds.
 
 > **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
 
 We can see how the parallax effect works in this example [here](https://parallax-effect.giridharhackclu.repl.co/)
 <br>
-You can see different elements are moving different speeds while scrolling.<br>
+Different elements on the page are moves with different speeds while scrolling.<br>
 
 ## Creating the Parallax Effect
 Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.
 Let's start working.<br>
 Fork this repl and explore ! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
 <br>
-It contains five elements with classes `layer l1`, `layer l2`, `layer l3`, `layer l4` and `layer l5` added with some basic styles. I created the elements in circular shape. Go ahead and use your creativity and customise the styles.<br>
+It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles. Go ahead and use your creativity and customise the styles.<br>
 
 Let's add parallax effect.
 This is very simple. The thing we have to do here is just select the layer and change it's speed while scrolling. That's it!<br>
-Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) and add a the following `function`.<br>
+Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) and add the following `function`.<br>
 
 ```javascript
 const parallax = (layer, distance, speed) => {
@@ -37,12 +38,12 @@ const parallax = (layer, distance, speed) => {
   item.style.transform = `translateY(${-distance*speed}px)`
 }
 ```
-This function has three arguments `layer` - the layer you want to add parallax, `distance` - how much we scroll and `speed` - the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
+This [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) has three arguments `layer`- the layer you want to add parallax, `distance`- how much we scroll and `speed`- the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
 
-And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y` of the element using CSS `transform: translateY( );` for changing the speed of the layer. The positive value translates downwards and negative value translates upwards. Discover more about `translateY( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).<br>
+And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y-offset` of the element using CSS `transform: translateY();` for changing the speed of the layer. The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).<br>
 
 ## Event Listener
-Now we are going to call this function while scrolling. So add an event listener `scroll` and the function given as argument gets executed.<br>
+Now we are going to call this function while scrolling. So add an event listener `scroll` . The function given as argument gets executed.<br>
 
 ```javascript
 document.addEventListener('scroll', () => {
