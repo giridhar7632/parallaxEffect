@@ -117,10 +117,16 @@ Then your final page will look something [like this](https://total-parallax.giri
 That's it! You added both `vertical-parallax` and `horizontal-parallax` effects. Well done.:wink:
 
 ## Inspiration
+
+These are some projects made using parallax-effect. 
+
 * **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
 * **Horizontal parallax** :
-* **Parallax on Mouse Move** : 
+* **Parallax on Mouse Move** : Not only on `scroll`, Parallax effect can also be seen on `mousemove`.
+  * Check this awesome effect [here](https://codepen.io/ge1doot/full/oXWepr)
+  * This one was created by me for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/).
 
 ## Speed-1 
-In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling. <br>
+In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
+
 The faster layer moves with double the speed of normal scrolling-speed. While, the slower layer will be fixed. Because while you are scrolling upwards it gets translated downwards with the same speed. So it appears as fixed in its position.
