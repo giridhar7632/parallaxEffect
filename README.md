@@ -2,8 +2,9 @@
 
 **using vanilla javaScript**
 <br/>
+![Parallax GIF](https://media.giphy.com/media/U7vM90lzsxT79Vqu79/giphy.gif)
 <br/>
-One of the most popular effects of the modern web is the parallax effect. There are many javaScript libraries like Rellax etc. available out there for creating the parallax effect. But we are going to use vanilla javascript to get it into action. Trust me! it's that simple. Get started and follow along!
+One of the most popular effects of the modern web experience is the **parallax effect**. There are many javaScript libraries available out there for creating parallax effect. But we are going to use vanilla javascript to make parallax effect. Trust me! it's that simple. So get started and follow along!
 You should have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
 
 # Getting Started
@@ -11,14 +12,15 @@ You should have some beginner-intermediate knowledge about HTML, CSS and some ja
 ## Parallax
 
 Parallax movement is when things move at different speeds relative to each other. This effect can be used to create an illusion of depth. 
-We will actually see this effect while scrolling a webpage. It's called Parallax scrolling.<br>
+We will actually experience this effect while scrolling a webpage. It's called Parallax scrolling.<br>
 The technique is popular in many places including video games, where it’s usually seen in the layered backgrounds.
 
 > **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
 
-We can see how the parallax effect works in this example [here](https://parallax-effect.giridharhackclu.repl.co/)
+We can see how the parallax scrolling works in this example [here](https://codepen.io/samdbeckham/full/OPXPNp)<br>
+<a href="https://codepen.io/samdbeckham/full/OPXPNp"><img src="https://cloud-50k8iudhw.vercel.app/parallax_scrolling.gif" alt="parallax scrolling"/></a>
 <br>
-Different elements on the page are moves with different speeds while scrolling.<br>
+^Different elements on the page moves with different speeds while scrolling.<br>
 
 ## Creating the Parallax Effect
 Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.
@@ -58,8 +60,8 @@ Add the following code<br>
 parallax('.l1', window.scrollY, 0.5)
 parallax('.l3', window.scrollY, -0.5)
 ```
-For faster speeds the `speed` will be positive and for slower speeds it should be negative.
-In the above code, we are adding faster speed to `l1` and slower to `l3`.<br> So finally look at the output and scroll. You can see that `l1` will move faster i.e., upwards (0.5 times the normal speed), `l3` will move slower i.e., downwards and the one with `no-effect` or `l2` will move with normal speed.<br>
+For faster speeds the `speed` will be positive and for slower speeds it should be negative.<br>
+In the above code, we are adding faster speed to `l1` and slower to `l3`. That means if you scroll `100px` upwards, the faster layer scrolls `110px` upwards and the slower layer scrolls somewhat about `90px`.<br> So finally look at the output and scroll.<br>
 Your final page will look something [like this](https://parallax-effect.giridharhackclu.repl.co/).<br>
 Try changing the speed to `1` and observe what happens to each layer and think why it happens. You can check the answer [here](#Speed-1).<br>
 That's it! You can add any number of layers for the document and call the `parallax` function. This is the *parallax effect*.
