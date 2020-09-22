@@ -1,9 +1,11 @@
 # Parallax Effect
 
 **using vanilla javaScript**
-<br/>
+
+
 ![Parallax GIF](https://media.giphy.com/media/U7vM90lzsxT79Vqu79/giphy.gif)
-<br/>
+
+
 One of the most popular effects of the modern web experience is the **parallax effect**. There are many javaScript libraries available out there for creating parallax effect. But we are going to use vanilla javascript to make parallax effect. Trust me! it's that simple. So get started and follow along!
 You should have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
 
@@ -17,20 +19,25 @@ The technique is popular in many places including video games, where it’s usua
 
 > **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
 
-We can see how the parallax scrolling works in this example [here](https://codepen.io/samdbeckham/full/OPXPNp)<br>
+We can see how the parallax scrolling works in this example [here](https://codepen.io/samdbeckham/full/OPXPNp)
+
 <a href="https://codepen.io/samdbeckham/full/OPXPNp"><img src="https://cloud-50k8iudhw.vercel.app/parallax_scrolling.gif" alt="parallax scrolling"/></a>
-<br>
-^Different elements on the page moves with different speeds while scrolling.<br>
+
+^As you scroll, different layers moves with different speeds.
 
 ## Creating the Parallax Effect
-Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.
-Let's start working.<br>
-Fork this repl and explore ! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
-<br>
-It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles. Go ahead and use your creativity and customise the styles.<br>
+Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.<br>
 
-Let's add parallax effect.
-This is very simple. The thing we have to do here is just select the layer and change it's speed while scrolling. That's it!<br>
+Fork this repl and explore ! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
+
+It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles. Go ahead and use your creativity and customise the styles.
+
+<a href="https://repl.it/@Giridharhackclu/parallax-starter#index.html"><img src="https://cloud-6z92hbh0u.vercel.app/screenshot_2020-09-22_171732.png" style="{border-radius: 3px;}" alt="#index.html"></a>
+
+Let's add parallax effect. The thing we have to do here is just select the layer and change it's speed while scrolling. That's it! :sweat_smile:
+
+Let's start doing it!
+
 Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) and add the following `function`.<br>
 
 ```javascript
