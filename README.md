@@ -79,7 +79,7 @@ So finally look at the output and scroll.
 
 Your final page will look something [like this](https://parallax-effect.giridharhackclu.repl.co/).
 
-<a href="https://parallax-effect.giridharhackclu.repl.co/"><img src="https://cloud-qld8y6jii.vercel.app/final_output.gif" alt="final result" height="250px"/></a>
+<a href="https://parallax-effect.giridharhackclu.repl.co/"><img src="https://cloud-qld8y6jii.vercel.app/final_output.gif" alt="final result"/></a>
 
 Try changing the speed to `1` and observe what happens to each layer and think why it happens. You can check the answer [here](#Speed-1).
 
@@ -143,7 +143,7 @@ These are some projects made using parallax-effect.
 * **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
 * **Horizontal parallax** : Best example of horizontal parallax :upside_down_face: 
   * Check it [here](https://codepen.io/danbhala/full/GJGQad). [Source code](https://codepen.io/danbhala/pen/GJGQad).
-  * [Horizontal parallax gallery](https://codepen.io/pehaa/full/zYxbxQg). [Sourse code](https://codepen.io/pehaa/pen/zYxbxQg).
+  * [Horizontal parallax gallery](https://codepen.io/pehaa/full/zYxbxQg). [Source code](https://codepen.io/pehaa/pen/zYxbxQg).
 * **Parallax on Mouse Move** : Not only on `scroll`, Parallax effect can also be seen on `mousemove`.
   * Check this awesome effect [here](https://codepen.io/ge1doot/full/oXWepr). [Source code](https://codepen.io/ge1doot/pen/oXWepr)
   * I created this one for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [Source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect).
