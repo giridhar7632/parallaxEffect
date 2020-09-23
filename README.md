@@ -136,7 +136,7 @@ Your creativity is not restricted to only this example. You can create different
 1) You can also create a parallax on `mousemove` using <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageX">`pageX`</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageY">`pageY`</a>.
 
 You can add parallax-effect on your websites for creating best of the user experience and display your content more interactively.
-Make use of creativity and create different parallax effects. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to see them!
+Make use of creativity and create different parallax effects. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to here from you!
 
 ## Inspiration
 
