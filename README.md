@@ -141,10 +141,16 @@ Make use of creativity and create different parallax effects. Share it with me o
 These are some projects made using parallax-effect. 
 
 * **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
-* **Horizontal parallax** :
+* **Horizontal parallax** : Best example of horizontal parallax :upside_down_face: 
+  * Check it [here](https://codepen.io/danbhala/full/GJGQad). [Source code](https://codepen.io/danbhala/pen/GJGQad).
+  * [Horizontal parallax gallery](https://codepen.io/pehaa/full/zYxbxQg). [Sourse code](https://codepen.io/pehaa/pen/zYxbxQg).
 * **Parallax on Mouse Move** : Not only on `scroll`, Parallax effect can also be seen on `mousemove`.
-  * Check this awesome effect [here](https://codepen.io/ge1doot/full/oXWepr)
-  * This one was created by me for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/).
+  * Check this awesome effect [here](https://codepen.io/ge1doot/full/oXWepr). [Source code](https://codepen.io/ge1doot/pen/oXWepr)
+  * This one was created by me for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [Source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect).
+  
+Check this article for more awesome examples - [article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html) 
+  
+Hope you love this workshop!
 
 ## Speed-1 
 In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
