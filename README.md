@@ -149,7 +149,7 @@ These are some projects made using parallax-effect.
   * [Horizontal parallax gallery](https://codepen.io/pehaa/full/zYxbxQg). [Source code](https://codepen.io/pehaa/pen/zYxbxQg).
   
 * **Parallax on Mouse Move** : Not only on `scroll`, Parallax effect can also be seen on `mousemove`.
-  * You can find mousemove parallax effect in [GitHub erroe page](https://github.com/404). You can see the castle and all things behind the octacat move as you move your mouse pointer. 
+  * You can find mousemove parallax effect in [GitHub erroe page](https://github.com/404). You can see the castle and all things behind the octacat move as you move your mouse pointer. :octocat:
   * Check this awesome effect [here](https://codepen.io/ge1doot/full/oXWepr). [Source code](https://codepen.io/ge1doot/pen/oXWepr)
   * I created this one for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [Source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect).
   
