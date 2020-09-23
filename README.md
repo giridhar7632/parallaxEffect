@@ -119,8 +119,12 @@ hrparallax('.l4', window.scrollY, -0.5)
 hrparallax('.l5', window.scrollY, 0.5)
 ```
 
-For rightward movement the `speed` will be negative and for leftward movement it should be positive.Here `l4` moves rightwards and `l5` moves leftwards.<br>
-Then your final page will look something [like this](https://total-parallax.giridharhackclu.repl.co/).<br>
+For rightward movement the `speed` will be negative and for leftward movement it should be positive.Here `l4` moves rightwards and `l5` moves leftwards.
+
+Then your final page will look something [like this](https://total-parallax.giridharhackclu.repl.co/).
+
+![Final REsult](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)
+
 That's it! You added both `vertical-parallax` and `horizontal-parallax` effects. Well done.:wink:
 
 ## Hacking
