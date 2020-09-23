@@ -146,7 +146,7 @@ These are some projects made using parallax-effect.
   * [Horizontal parallax gallery](https://codepen.io/pehaa/full/zYxbxQg). [Sourse code](https://codepen.io/pehaa/pen/zYxbxQg).
 * **Parallax on Mouse Move** : Not only on `scroll`, Parallax effect can also be seen on `mousemove`.
   * Check this awesome effect [here](https://codepen.io/ge1doot/full/oXWepr). [Source code](https://codepen.io/ge1doot/pen/oXWepr)
-  * This one was created by me for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [Source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect).
+  * I created this one for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [Source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect).
   
 Check this article for more awesome examples - [article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html) 
   
