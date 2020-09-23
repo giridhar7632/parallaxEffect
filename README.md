@@ -6,7 +6,7 @@
 ![Parallax GIF](https://media.giphy.com/media/U7vM90lzsxT79Vqu79/giphy.gif)
 
 
-One of the most popular effects of the modern web experience is the **parallax effect**. There are many javaScript libraries available out there for creating parallax effect. But we are going to use vanilla javascript to make parallax effect. Trust me! it's that simple. So get started and follow along!
+One of the most popular effects of the modern web experience is the **parallax effect**. There are many javaScript libraries available out there for creating parallax effect. But we are going to use vanilla javascript to make one. Then get started and follow along!
 You should have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
 
 # Getting Started
@@ -14,27 +14,28 @@ You should have some beginner-intermediate knowledge about HTML, CSS and some ja
 ## Parallax
 
 Parallax movement is when things move at different speeds relative to each other. This effect can be used to create an illusion of depth. 
-We will actually experience this effect while scrolling a webpage. It's called Parallax scrolling.<br>
+We will actually experience this effect while scrolling a webpage. It's called Parallax scrolling.
+
 The technique is popular in many places including video games, where it’s usually seen in the layered backgrounds.
 
 > **Note:** Parallax scrolling does not always work on mobile devices smartphones. However, you can use media queries to turn off the effect on mobile devices.
 
 We can see how the parallax scrolling works in this example [here](https://codepen.io/samdbeckham/full/OPXPNp)
 
-<a href="https://codepen.io/samdbeckham/full/OPXPNp"><img src="https://cloud-50k8iudhw.vercel.app/parallax_scrolling.gif" alt="parallax scrolling"/></a>
+<a href="https://codepen.io/samdbeckham/full/OPXPNp" target="_blank"><img src="https://cloud-50k8iudhw.vercel.app/parallax_scrolling.gif" alt="parallax scrolling"/></a>
 
 ^As you scroll, different layers moves with different speeds.
 
 ## Creating the Parallax Effect
-Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.<br>
+Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.
 
 Fork this repl and explore ! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
 
-It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles. Go ahead and use your creativity and customise the styles.
+It contains three `div` elements with classes `layer l1`, `layer l2` and `layer l3` added with some basic styles. Go ahead!  use your creativity and customise the styles.
 
 <a href="https://repl.it/@Giridharhackclu/parallax-starter#index.html"><img src="https://cloud-6z92hbh0u.vercel.app/screenshot_2020-09-22_171732.png" style="{border-radius: 3px;}" alt="#index.html"></a>
 
-For adding parallax effect, The thing we have to do here is just select the layer and change it's speed while scrolling. That's it! :sweat_smile:
+For adding parallax effect, The thing we have to do is select the layer and change it's speed while scrolling. That's it! :sweat_smile:
 
 Let's start doing it!
 
@@ -47,7 +48,7 @@ const parallax = (layer, distance, speed) => {
   item.style.transform = `translateY(${-distance*speed}px)`
 }
 ```
-This [function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) has three arguments `layer`- the layer you want to add parallax, `distance`- how much we scroll and `speed`- the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
+This <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">`function`</a> has three arguments `layer`- the layer you want to add parallax, `distance`- how much we scroll and `speed`- the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
 
 And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y-offset` of the element using CSS `transform: translateY();` for changing the speed of the layer. The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
 
