@@ -50,12 +50,13 @@ const parallax = (layer, distance, speed) => {
 ```
 This <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions">`function`</a> has three arguments `layer`- the layer you want to add parallax, `distance`- how much we scroll and `speed`- the required speed change. We are going to add parallax for multiple layers. That's why we created a function for recalling it for different layers.<br>
 
-And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y-offset` of the element using CSS `transform: translateY();` for changing the speed of the layer. The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
+And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y-offset` of the element using CSS `transform: translateY();` for changing the speed of the layer. 
+The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
 
-<a href="https://cloud-lb2jqapew.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-lb2jqapew.vercel.app/screenshot_2020-09-22_184214.png" alt="translateX() example" height="250px" width="auto"/></a>
+<a href="https://cloud-lb2jqapew.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-lb2jqapew.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
 
 ## Event Listener
-Now we are going to call this function while scrolling. So add an event listener `scroll` . The function given as argument gets executed.<br>
+Now we are going to call this function while scrolling. So add an [event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event">`scroll`</a> . The function given as argument gets executed.<br>
 
 ```javascript
 document.addEventListener('scroll', () => {
@@ -71,8 +72,10 @@ Add the following code<br>
 parallax('.l1', window.scrollY, 0.5)
 parallax('.l3', window.scrollY, -0.5)
 ```
-For faster speeds the `speed` will be positive and for slower speeds it should be negative.<br>
-In the above code, we are adding faster speed to `l1` and slower to `l3`. That means if you scroll `100px` upwards, the faster layer scrolls `110px` upwards and the slower layer scrolls somewhat about `90px`.<br> So finally look at the output and scroll.
+For faster speeds the `speed` will be positive and for slower speeds it should be negative. Anyhow we have to make sure that `translateY()` is negative for the faster element and positive for slower element.
+In the above code, we are adding faster speed to `l1` and slower to `l3`. That means if you scroll `100px` upwards, the faster layer scrolls `150px` upwards and the slower layer scrolls somewhat about `50px`.
+
+So finally look at the output and scroll.
 
 Your final page will look something [like this](https://parallax-effect.giridharhackclu.repl.co/).
 
@@ -81,9 +84,12 @@ Your final page will look something [like this](https://parallax-effect.giridhar
 Try changing the speed to `1` and observe what happens to each layer and think why it happens. You can check the answer [here](#Speed-1).
 
 That's it! You can add any number of layers for the document and call the `parallax` function. This is the *parallax effect*.
-This is the main basic about Parallax effect. You can modify the function `parallax` and get the result you want.<br> 
-Now Let's try different parallax.
+This is the main basic principle of Parallax effect. You can modify the function `parallax` and get the result you want.
+
+Now Let's try a different parallax.
+
 ## Horizontal Parallax
+
 Now add another two `div` tags with classes `layer l4` and `layer l5` to `index.html`
 
 ```html
@@ -116,6 +122,15 @@ hrparallax('.l5', window.scrollY, 0.5)
 For rightward movement the `speed` will be negative and for leftward movement it should be positive.Here `l4` moves rightwards and `l5` moves leftwards.<br>
 Then your final page will look something [like this](https://total-parallax.giridharhackclu.repl.co/).<br>
 That's it! You added both `vertical-parallax` and `horizontal-parallax` effects. Well done.:wink:
+
+## Hacking
+
+Your creativity is not restricted to only this example. You can create different parallax effects. 
+1) In this example, I focused only on scrolling vertically. You can use <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX">`scrollX`</a> for creating parallax while scrolling horizontally.
+1) You can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate">`transform: translate(X,Y);`</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d">`transform: translate3d(X,Y,Z);`</a> for creating different effects.
+1) You can also create a parallax on `mousemove` using <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageX">`pageX`</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageY">`pageY`</a>.
+
+Make use of creativity and create different parallax effects. You can show me on slack as [@giridhar](https://hackclub.slack.com/archives/U013E6KE9UJ/), I'd love to see it!
 
 ## Inspiration
 
