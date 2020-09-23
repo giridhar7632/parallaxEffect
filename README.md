@@ -26,6 +26,7 @@ We can see how the parallax scrolling works in this example [here](https://codep
 
 ^As you scroll, different layers moves with different speeds.
 
+
 ## Creating the Parallax Effect
 Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.
 
@@ -134,17 +135,21 @@ Your creativity is not restricted to only this example. You can create different
 1) You can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate">`transform: translate(X,Y);`</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d">`transform: translate3d(X,Y,Z);`</a> for creating different effects.
 1) You can also create a parallax on `mousemove` using <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageX">`pageX`</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageY">`pageY`</a>.
 
-Make use of creativity and create different parallax effects. Share it with me on slack as [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to see it!
+You can add parallax-effect on your websites for creating best of the user experience and display your content more interactively.
+Make use of creativity and create different parallax effects. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to see them!
 
 ## Inspiration
 
 These are some projects made using parallax-effect. 
 
 * **Multilayer Parallax** : [Firewatch](http://www.firewatchgame.com/)- they created really awesome hero page using multilayer parallax.
+
 * **Horizontal parallax** : Best example of horizontal parallax :upside_down_face: 
   * Check it [here](https://codepen.io/danbhala/full/GJGQad). [Source code](https://codepen.io/danbhala/pen/GJGQad).
   * [Horizontal parallax gallery](https://codepen.io/pehaa/full/zYxbxQg). [Source code](https://codepen.io/pehaa/pen/zYxbxQg).
+  
 * **Parallax on Mouse Move** : Not only on `scroll`, Parallax effect can also be seen on `mousemove`.
+  * You can find mousemove parallax effect in [GitHub erroe page](https://github.com/404). You can see the castle and all things behind the octacat move as you move your mouse pointer. 
   * Check this awesome effect [here](https://codepen.io/ge1doot/full/oXWepr). [Source code](https://codepen.io/ge1doot/pen/oXWepr)
   * I created this one for demonstrating parallax on mousemove. You can check it [here](https://horizontal-parallax-effect.giridharhackclu.repl.co/). [Source code](https://repl.it/@Giridharhackclu/horizontal-parallax-effect).
   
