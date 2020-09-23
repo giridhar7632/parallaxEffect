@@ -54,7 +54,7 @@ This <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/
 And then we are going to get the element using `querySelector`. You can use any javascript DOM selector as your wish. Finally we will be translating the `Y-offset` of the element using CSS `transform: translateY();` for changing the speed of the layer. 
 The positive value into `translateY()` translates downwards and negative value translates upwards. Discover more about `translateY( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateY).
 
-<a href="https://cloud-lb2jqapew.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-lb2jqapew.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
+<a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_184214.png" alt="translateY() example" height="250px" width="auto"/></a>
 
 ## Event Listener
 Now we are going to call this function while scrolling. So add an [event listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event">`scroll`</a> . The function given as argument gets executed.<br>
@@ -111,7 +111,7 @@ const hrparallax = (layer, distance, speed) => {
 ```
 The positive value translates rightwards and negative value translates leftwards. Discover more about `translateX( )` [here](https://developer.mozilla.org/en-US/docs/web/css/transform-function/translateX).
 
-<a href="https://cloud-lb2jqapew.vercel.app/screenshot_2020-09-22_185155.png"><img src="https://cloud-lb2jqapew.vercel.app/screenshot_2020-09-22_185155.png" alt="translateX() example" width="auto" height="200px"/></a>
+<a href="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_185155.png"><img src="https://cloud-7jtog4dbv.vercel.app/screenshot_2020-09-22_185155.png" alt="translateX() example" width="auto" height="200px"/></a>
 
 Add the following code
 
