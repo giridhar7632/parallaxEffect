@@ -130,7 +130,7 @@ Your creativity is not restricted to only this example. You can create different
 1) You can use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate">`transform: translate(X,Y);`</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate3d">`transform: translate3d(X,Y,Z);`</a> for creating different effects.
 1) You can also create a parallax on `mousemove` using <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageX">`pageX`</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/pageY">`pageY`</a>.
 
-Make use of creativity and create different parallax effects. You can show me on slack as [@giridhar](https://hackclub.slack.com/archives/U013E6KE9UJ/), I'd love to see it!
+Make use of creativity and create different parallax effects. Share it with me on slack as [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to see it!
 
 ## Inspiration
 
