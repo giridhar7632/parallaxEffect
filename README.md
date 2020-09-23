@@ -150,7 +150,7 @@ These are some projects made using parallax-effect.
   
 Check this article for next-level parallax awesome examples - [article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html) 
   
-Hope you love this workshop!
+Hope you love this workshop! :v:
 
 ## Speed-1 
 In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
