@@ -155,7 +155,7 @@ These are some projects made using parallax-effect.
 
 * **Horizontal parallax** : Best example of horizontal parallax :upside_down_face: 
   * Check it [here](https://codepen.io/danbhala/full/GJGQad). [Source code](https://codepen.io/danbhala/pen/GJGQad).
-  * [Horizontal parallax gallery](https://codepen.io/pehaa/full/zYxbxQg). [Source code](https://codepen.io/pehaa/pen/zYxbxQg).
+  * You can create a gallery using horizontal parallax effect. Check it [here](https://codepen.io/pehaa/full/zYxbxQg). [Source code](https://codepen.io/pehaa/pen/zYxbxQg).
   
 * **Parallax on Mouse Move** : Not only on `scroll`, Parallax effect can also be seen on `mousemove`.
   * You can find mousemove parallax effect in [GitHub erroe page](https://github.com/404). You can see the castle and all things behind the octacat move as you move your mouse pointer. :octocat:
