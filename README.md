@@ -157,6 +157,7 @@ Check this article for awesome next-level parallax examples - [article](https://
   
 Hope you love this workshop! :v:
 
+
 ## Speed-1 
 In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
 
