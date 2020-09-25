@@ -35,8 +35,12 @@ We can see how the parallax scrolling works in this example [here](https://codep
 
 ^As you scroll, different layers moves with different speeds.
 
+## Advantages of Parallax Effect
+
+The world is changing very fast, isn't it? If you want to make your website amazing, it's not enough to show static elements. You have to amaze the visitor and make them want to explore your site, otherwise they can leave fast. You have to show them some cool things and visual suprises, but not too time taking. Parallax effect makes it possible. Moving elements on scrolling or on moving mouse will make them some what interested.
 
 ## Creating the Parallax Effect
+
 Practically a parallax is composed of more than one layer in parallel, moving along on scroll at different speeds, giving us the feel that they're at different distances.
 
 Fork this repl and explore ! [here](https://repl.it/@Giridharhackclu/parallax-starter#index.html).
