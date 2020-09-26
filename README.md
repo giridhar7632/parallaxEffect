@@ -59,7 +59,7 @@ For adding parallax effect, The thing we have to do is select the layer and chan
 
 Let's start doing it!
 
-### Get going
+### Get going..
 
 Go to [script.js](https://repl.it/@Giridharhackclu/parallax-starter#script.js) and add the following `function`.<br>
 
@@ -177,7 +177,6 @@ These are some projects made using parallax-effect.
 Check this article for awesome next-level parallax examples - [article](https://www.awwwards.com/30-great-websites-with-parallax-scrolling.html) 
   
 Hope you love this workshop! :v:
-
 
 ## Speed-1 
 In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
