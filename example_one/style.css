@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.fixed{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+main{
+  min-height: 200vh;
+  width: 100vw;
+  background: linear-gradient(#09033a, 1000px,#fce306);
+}
+main section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
