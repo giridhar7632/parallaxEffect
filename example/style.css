@@ -8,11 +8,13 @@
 }
 body{
   min-height: 200vh;
-  max-width: 100vw;
+  min-width: 200vw;
   overflow-x: auto;
+  background-color: aliceblue;
 }
 .main{
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -25,8 +27,23 @@ body{
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color:rgb(98, 53, 156);
 }
+.faster{
+  background-color: rgb(211, 81, 58);
+}
+.no-effect{
+  background-color: rgb(40, 148, 76);
+}
+.slower{
+  background-color: rgb(38, 50, 160);
+}
+.right{
+  background-color: rgb(156, 53, 142);
+}
+.left{
+  background-color: rgb(196, 185, 32);
+}
+
 @media only screen and (max-width: 768px){
   *{
     font-size: 17px;

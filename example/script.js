@@ -9,8 +9,8 @@ const hrparallax = (layer, distance, speed) => {
   item.style.transform = `translateX(${-distance*speed}px)`;
 }
 document.addEventListener('scroll', () => {
-  parallax('.layer-1', window.scrollY, 0.5);
-  parallax('.layer-2', window.scrollY, -0.5);
-  hrparallax('.layer-4', window.scrollY, -0.5);
-  hrparallax('.layer-5', window.scrollY, 0.5);
+  parallax('.layer-1', window.scrollX, 0.5);
+  parallax('.layer-2', window.scrollX, -0.5);
+  hrparallax('.layer-4', window.scrollX, -0.5);
+  hrparallax('.layer-5', window.scrollX, 0.5);
 });
