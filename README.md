@@ -11,7 +11,7 @@ author: '@giridhar7632'
 One of the most popular effects of the modern web experience is the **parallax effect**. There are many javaScript libraries available out there for creating parallax effect. But we are going to use vanilla javascript to make one. Then get started and follow along!
 You should have some beginner-intermediate knowledge about HTML, CSS and some javaScript.
 
-We are going to but something like this
+We are going to make something like this
 
 <a href="https://total-parallax.giridharhackclu.repl.co/">![Final REsult](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)</a>
 
