@@ -4,25 +4,62 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-.fixed{
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  font-size: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+body{
+  background: #0a2a43;
+  min-height: 1500px;
 }
-main{
-  min-height: 200vh;
-  width: 100vw;
-  background: linear-gradient(#09033a, 1000px,#fce306);
-}
-main section{
+section{
+  position: relative;
+  width: 100%;
   height: 100vh;
+  overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+section:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 10000;
+}
+section:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a2a43;
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#text{
+  position: relative;
+  color: #ffffff;
+  font-size: 10em;
+  z-index: 1;
+}
+#road{
+  z-index: 2;
+}
+.content{
+  height: 80vh;
+  width: 100%;
+  padding: 100px;
   color: white;
+}
+.content h1{
+  font-size: 4rem;
 }
