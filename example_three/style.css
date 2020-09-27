@@ -5,23 +5,45 @@
   font-family: sans-serif;
 }
 body{
-  height: 100vh;
-  background: cyan;
+  height: 600vh;
+  background: rgba(0, 255, 255, 0.466);
 }
 .plane{
-  position: fixed;
-  font-size: 60px;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  position: relative;
+  height: 200px;
+}
+.plane img{
+  height: 200px;
+  position: absolute;
+  top: 30vh;
+  left: 40vw;
+  z-index: 50;
+  transform: rotateZ(45deg);
 }
 main{
   min-width: 600vw;
+  height: 100vh;
   display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+main div{
+  display: flex;
+  justify-content: space-between;
   flex-direction: row;
+  height: 500px;
+}
+main .upper{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+main .lower{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
 }
 section{
   min-width: 100vw;
