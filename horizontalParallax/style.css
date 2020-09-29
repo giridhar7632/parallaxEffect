@@ -8,48 +8,6 @@ body{
   background: aliceblue;
   overflow-x: hidden;
 }
-.hero{
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-.hero img{
-  position: absolute;
-}
-.cloud{
-  height: 200px;
-  width: auto;
-  opacity: 0.8;
-}
-.plane{
-  height: 150px;
-  width: auto;
-}
-.cl1{
-  top: 5%;
-  left: 2%;
-}
-.cl2{
-  top: 15%;
-  left: 20%;
-}
-.cl3{
-  top: 10%;
-  left: 40%;
-}
-.cl4{
-  top: 7%;
-  left: 60%;
-}
-.cl5{
-  top: 15%;
-  right: 2%;
-}
-.pl{
-  position: absolute;
-  top: 75%;
-  left: 5%;
-}
 .main{
   position: relative;
   width: 100%;
