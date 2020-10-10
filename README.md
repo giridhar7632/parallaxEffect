@@ -101,7 +101,13 @@ Your final page looks something [like this](https://parallax-effect.giridharhack
 
 <a href="https://parallax-effect.giridharhackclu.repl.co/"><img src="https://cloud-qld8y6jii.vercel.app/final_output.gif" alt="final result"/></a>
 
-Try changing the speed to `1`, observe what happens to each layer and think why it happens. You can check the answer [here](#Speed-1).
+Try changing the speed to `1`, observe what happens to each layer and think why it happens.
+
+## Speed-1
+
+In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
+
+The faster layer moves with double the speed of normal scrolling-speed. While, the slower layer will be fixed. Because while you are scrolling upwards it gets translated downwards with the same speed. So it appears as fixed in its position.
 
 That's it! You can add any number of layers for the document and call the `parallax` function. This is the _parallax effect_.
 These are the main basic principle of Parallax effect. You can modify the function `parallax` and get the result you want.
@@ -173,8 +179,3 @@ Check this article for awesome next-level parallax examples - [article](https://
 
 Hope you love this workshop! :v:
 
-## Speed-1
-
-In vertical parallax, when the speed is `1` both upwards and downwards, that means the layer gets translated with speed of scrolling.
-
-The faster layer moves with double the speed of normal scrolling-speed. While, the slower layer will be fixed. Because while you are scrolling upwards it gets translated downwards with the same speed. So it appears as fixed in its position.
