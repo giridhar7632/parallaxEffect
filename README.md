@@ -6,7 +6,7 @@ author: '@giridhar7632'
 
 # Parallax Effect
 
-One of the most popular effects of modern web experience is **the parallax effect**. We are going to build a basic project to understand how the parallax effect works.
+One of the most popular effects of modern web experience is **parallax effect**. We are going to build a basic project to understand how the parallax effect works.
 To understand this workshop you will need to be familiar with HTML, CSS and JavaScript.
 
 <a href="https://total-parallax.giridharhackclu.repl.co/">![Final Result](https://cloud-1z03ndewk.vercel.app/ezgif.com-gif-maker__2_.gif)</a>
