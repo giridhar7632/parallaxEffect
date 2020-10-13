@@ -162,7 +162,7 @@ You can create different parallax effects.
 
 You can add parallax-effect to your websites for creating better user experience and display your content more interactively.
 
-Make use of your creativity and make different parallax effects. Also customise the styles. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to here from you!
+Make use of your creativity and create different parallax effects. Also customise the styles. Share it with me on slack [@giridhar](https://hackclub.slack.com/team/U013E6KE9UJ), I'd love to here from you!
 
 ## Inspiration
 
