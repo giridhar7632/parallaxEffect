@@ -112,7 +112,7 @@ The faster layer moves with double the speed of normal scrolling-speed. While, t
 That's it! You can add any number of layers for the document and call the `parallax` function. This is the _parallax effect_.
 These are the main basic principle of Parallax effect. You can modify the function `parallax` and get the result you want.
 
-Let's try another method of applying parallax.
+Let's try another way for applying parallax.
 
 ## Horizontal Parallax
 
